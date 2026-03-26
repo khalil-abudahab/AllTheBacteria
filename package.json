@@ -1,0 +1,21 @@
+{
+  "name": "all-the-bacteria-docs",
+  "private": true,
+  "scripts": {
+    "dev": "next --turbopack",
+    "build": "next build",
+    "postbuild": "pagefind --site .next/server/app --output-path public/_pagefind",
+    "start": "next start",
+    "convert-docs": "node scripts/convert-rst-to-mdx.mjs"
+  },
+  "dependencies": {
+    "next": "^16.2.1",
+    "nextra": "^4.6.1",
+    "nextra-theme-docs": "^4.6.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "pagefind": "^1.4.0"
+  }
+}
